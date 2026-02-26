@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" class="object-contain" href="img/logo.ico">
+  <title>Montclair Infrastructure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-white shadow fixed w-full z-50 h-20">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2 font-bold text-xl">
+      <img src="img/logo.png" class="w-12 h-12 object-contain"></img>
+      Montclair Infrastructure
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 font-medium">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#profile" class="hover:text-blue-600">Our Profile</a></li>
+      <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+      <li><a href="#message" class="hover:text-blue-600">Message Us</a></li>
+    </ul>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button
+      onclick="toggleMenu()"
+      class="md:hidden focus:outline-none"
+      aria-label="Toggle Menu"
+    >
+      <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg"
+           class="h-7 w-7 transition-transform duration-300"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="md:hidden overflow-hidden max-h-0 opacity-0
+           transition-all duration-500 ease-in-out bg-white"
+  >
+    <ul class="flex flex-col gap-4 px-6 py-4 font-medium">
+      <li><a onclick="toggleMenu()" href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a onclick="toggleMenu()" href="#profile" class="hover:text-blue-600">Our Profile</a></li>
+      <li><a onclick="toggleMenu()" href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+      <li><a onclick="toggleMenu()" href="#message" class="hover:text-blue-600">Message Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home"
+         class="max-w-7xl mx-auto px-4 py-16
+         animate-[fadeIn_1s_ease-out] scroll-mt-24">
+  <h1 class="text-3xl font-bold mb-2 mt-5">
+    Hi <span id="username" class="text-blue-600">Name</span>, Welcome To Montclair Infrastructure
+  </h1>
+  <p class="text-gray-600">Est. Since 2017</p>
+
+  <!-- PHOTO BANNER / SLIDER -->
+  <div class="mt-10 relative max-w-7xl mx-auto overflow-hidden rounded-xl shadow-lg">
+
+    <!-- Slider Wrapper -->
+    <div
+      id="slider"
+      class="flex transition-transform duration-700 ease-in-out"
+      style="transform: translateX(0%)"
+    >
+      <img src="img/1.jpg" class="w-full flex-shrink-0 object-cover" style="aspect-ratio: 1366 / 578;">
+      <img src="img/2.jpg" class="w-full flex-shrink-0 object-cover" style="aspect-ratio: 1366 / 578;">
+      <img src="img/3.jpg" class="w-full flex-shrink-0 object-cover" style="aspect-ratio: 1366 / 578;">
+    </div>
+
+    <!-- BUTTON PREV -->
+    <button
+      onclick="prevSlide()"
+      class="absolute left-4 top-1/2 -translate-y-1/2
+           bg-black/50 text-white px-3 py-2 rounded-full
+           hover:bg-black/70 transition"
+    >
+      ❮
+    </button>
+
+    <!-- BUTTON NEXT -->
+    <button
+      onclick="nextSlide()"
+      class="absolute right-4 top-1/2 -translate-y-1/2
+           bg-black/50 text-white px-3 py-2 rounded-full
+           hover:bg-black/70 transition"
+    >
+      ❯
+    </button>
+  </div>
+</section>
+
+<!-- ================= PROFILE ================= -->
+<section id="profile" class="py-16 animate-[slideUp_1s_ease-out] scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-4">About the Company</h2>
+
+    <p class="mb-6 text-gray-600 leading-relaxed">
+      We are a professional construction company committed to delivering high-quality
+      infrastructure, building, and civil engineering solutions. With years of experience
+      in the construction industry, we have successfully completed various projects ranging
+      from residential buildings, commercial facilities, to large-scale infrastructure
+      developments. Our company is built on a strong foundation of integrity, professionalism,
+      and technical excellence, ensuring that every project is executed with precision,
+      safety, and efficiency.
+      <br><br>
+      By combining modern construction technology, skilled human resources, and effective
+      project management, we strive to meet and exceed client expectations while adhering
+      to national and international standards. We believe that sustainable construction
+      practices and long-term partnerships are essential to creating value not only for
+      our clients, but also for society and the environment.
+    </p>
+
+    <h3 class="text-xl font-semibold mb-2">Vision & Mission</h3>
+
+    <ul class="list-disc pl-6 text-gray-600 space-y-2">
+      <li>
+        <strong>Vision:</strong>
+        <p> become a leading construction company recognized for
+        excellence, innovation, and reliability in delivering sustainable and high-quality
+        construction projects.
+      </p>
+      <li>
+        <strong>Mission:</strong>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>To deliver construction services that prioritize quality, safety, and timely project completion.</li>
+          <li>To continuously improve our human resources through training and professional development.</li>
+          <li>To apply modern construction technologies and sustainable practices in every project.</li>
+          <li>To build long-term relationships with clients based on trust, transparency, and mutual success.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= HEADQUARTER ================= -->
+<section class="py-16 animate-[slideUp_1s_ease-out]">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-8">Our Headquarter</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+
+      <div class="group transition transform hover:-translate-y-2">
+        <div class="w-32 h-32 mx-auto rounded-full border
+                    flex items-center justify-center
+                    group-hover:bg-blue-600 group-hover:text-white
+                    transition duration-300">
+          Jakarta
+        </div>
+      </div>
+
+      <div class="group transition transform hover:-translate-y-2">
+        <div class="w-32 h-32 mx-auto rounded-full border
+                    flex items-center justify-center
+                    group-hover:bg-blue-600 group-hover:text-white
+                    transition duration-300">
+          Bandung
+        </div>
+      </div>
+
+      <div class="group transition transform hover:-translate-y-2">
+        <div class="w-32 h-32 mx-auto rounded-full border
+                    flex items-center justify-center
+                    group-hover:bg-blue-600 group-hover:text-white
+                    transition duration-300">
+          Surabaya
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= MESSAGE US ================= -->
+<section id="message" class="bg-white py-16 ">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+
+    <!-- FORM -->
+    <form id="messageForm" class="space-y-4">
+      <h2 class="text-2xl font-bold">Message Us</h2>
+
+      <input type="text" id="name" placeholder="FullName" class="w-full border px-3 py-2 rounded">
+      <p>Date of Birth</p>
+      <input type="date" id="birth" class="w-full border px-3 py-2 rounded">
+      <p>Gender</p>
+      <div class="flex gap-4">
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+      </div>
+
+      <textarea id="messageText" placeholder="Message" class="w-full border px-3 py-2 rounded"></textarea>
+
+      <button
+        class="w-full bg-blue-600 text-white py-2 rounded
+         hover:bg-blue-700
+         hover:scale-105
+         active:scale-95
+         transition transform duration-300"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- RESULT -->
+    <div class="border p-4 rounded bg-gray-50">
+      <p id="result">Fill out the form and submit to see the results.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4 text-sm text-gray-500">
+  Created By Rizky
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
