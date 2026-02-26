@@ -19,7 +19,7 @@ document.getElementById("messageForm").addEventListener("submit", function (e) {
   document.getElementById("result").innerHTML = `
     <strong>Current Time:</strong> ${new Date()}<br><br>
     <strong>Name:</strong> ${name}<br>
-    <strong>Birth of Date:</strong> ${birth}<br>
+    <strong>Date of Birth:</strong> ${birth}<br>
     <strong>Gender:</strong> ${gender}<br>
     <strong>Message:</strong> ${message}
   `;
