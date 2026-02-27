@@ -11,7 +11,7 @@
 
 <body class="bg-gray-100 text-gray-800">
 
-<!-- ================= NAVBAR ================= -->
+<!--NAVBAR-->
 <nav class="bg-white shadow fixed w-full z-50 h-20">
   <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 
@@ -21,15 +21,15 @@
       Montclair Infrastructure
     </div>
 
-    <!-- Desktop Menu -->
+    <!-- Desktop -->
     <ul class="hidden md:flex gap-6 font-medium">
       <li><a href="#home" class="hover:text-blue-600">Home</a></li>
       <li><a href="#profile" class="hover:text-blue-600">Our Profile</a></li>
-      <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+      <li><a href="#catalog" class="hover:text-blue-600">Catalog</a></li>
       <li><a href="#message" class="hover:text-blue-600">Message Us</a></li>
     </ul>
 
-    <!-- Hamburger Button (Mobile) -->
+    <!-- Hamburger Button -->
     <button
       onclick="toggleMenu()"
       class="md:hidden focus:outline-none"
@@ -45,7 +45,7 @@
     </button>
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile -->
   <div
     id="mobileMenu"
     class="md:hidden overflow-hidden max-h-0 opacity-0
@@ -54,13 +54,13 @@
     <ul class="flex flex-col gap-4 px-6 py-4 font-medium">
       <li><a onclick="toggleMenu()" href="#home" class="hover:text-blue-600">Home</a></li>
       <li><a onclick="toggleMenu()" href="#profile" class="hover:text-blue-600">Our Profile</a></li>
-      <li><a onclick="toggleMenu()" href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+      <li><a onclick="toggleMenu()" href="#catalog" class="hover:text-blue-600">Portfolio</a></li>
       <li><a onclick="toggleMenu()" href="#message" class="hover:text-blue-600">Message Us</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ================= HOME ================= -->
+<!--HOME-->
 <section id="home"
          class="max-w-7xl mx-auto px-4 py-16
          animate-[fadeIn_1s_ease-out] scroll-mt-24">
@@ -69,7 +69,7 @@
   </h1>
   <p class="text-gray-600">Est. Since 2017</p>
 
-  <!-- PHOTO BANNER / SLIDER -->
+  <!-- PHOTO SLIDER -->
   <div class="mt-10 relative max-w-7xl mx-auto overflow-hidden rounded-xl shadow-lg">
 
     <!-- Slider Wrapper -->
@@ -105,8 +105,8 @@
   </div>
 </section>
 
-<!-- ================= PROFILE ================= -->
-<section id="profile" class="py-16 animate-[slideUp_1s_ease-out] scroll-mt-24">
+<!--PROFILE-->
+<section id="profile" class="py-6 bg-gray-100 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-2xl font-bold mb-4">About the Company</h2>
 
@@ -125,30 +125,189 @@
       practices and long-term partnerships are essential to creating value not only for
       our clients, but also for society and the environment.
     </p>
+    <!--BRIEF HISTORY-->
+    <div class="mt-12">
+      <h3 class="text-xl font-bold mb-4">Brief History</h3>
 
-    <h3 class="text-xl font-semibold mb-2">Vision & Mission</h3>
+      <div class="space-y-4 text-gray-600 leading-relaxed">
+        <p>
+          Founded in 2017, Montclair Infrastructure began as a small civil
+          engineering contractor focused on residential and local development projects.
+        </p>
 
-    <ul class="list-disc pl-6 text-gray-600 space-y-2">
-      <li>
-        <strong>Vision:</strong>
-        <p> become a leading construction company recognized for
-        excellence, innovation, and reliability in delivering sustainable and high-quality
-        construction projects.
-      </p>
-      <li>
-        <strong>Mission:</strong>
-        <ul class="list-disc pl-6 mt-2 space-y-1">
-          <li>To deliver construction services that prioritize quality, safety, and timely project completion.</li>
-          <li>To continuously improve our human resources through training and professional development.</li>
-          <li>To apply modern construction technologies and sustainable practices in every project.</li>
-          <li>To build long-term relationships with clients based on trust, transparency, and mutual success.</li>
-        </ul>
-      </li>
-    </ul>
+        <p>
+          Over the years, the company expanded into commercial construction and
+          large-scale infrastructure, building a strong reputation for reliability,
+          innovation, and quality project execution.
+        </p>
+
+        <p>
+          Today, Montclair Infrastructure continues to grow with a commitment
+          to sustainable construction practices and long-term partnerships
+          across Indonesia.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
+<!--VISION & MISSION-->
+<section class=" bg-gray-100 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-4">
 
-<!-- ================= HEADQUARTER ================= -->
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- VISION -->
+      <div class="bg-white rounded-[28px] p-12
+                  shadow-xl shadow-gray-200
+                  transition duration-300 hover:-translate-y-2">
+
+        <p class="text-xs tracking-[0.25em] text-blue-600 font-semibold mb-6">
+          VISION
+        </p>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 leading-snug">
+          Leading & Sustainable Construction
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed text-base">
+          To become a leading construction company recognized for excellence,
+          innovation, and reliability in delivering sustainable and high-quality
+          construction projects.
+        </p>
+
+      </div>
+
+      <!-- MISSION -->
+      <div class="bg-white rounded-[28px] p-12
+                  shadow-xl shadow-gray-200
+                  transition duration-300 hover:-translate-y-2">
+
+        <p class="text-xs tracking-[0.25em] text-blue-600 font-semibold mb-6">
+          MISSION
+        </p>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 leading-snug">
+          Quality, Innovation & Partnership
+        </h3>
+
+        <ul class="space-y-5 text-gray-600 leading-relaxed text-base">
+          <li class="flex gap-4">
+            <span class="mt-2 w-2.5 h-2.5 bg-blue-600 rounded-full"></span>
+            <span>Deliver construction services prioritizing quality, safety, and timely completion.</span>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="mt-2 w-2.5 h-2.5 bg-blue-600 rounded-full"></span>
+            <span>Continuously improve human resources through training and development.</span>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="mt-2 w-2.5 h-2.5 bg-blue-600 rounded-full"></span>
+            <span>Apply modern technologies and sustainable construction practices.</span>
+          </li>
+
+          <li class="flex gap-4">
+            <span class="mt-2 w-2.5 h-2.5 bg-blue-600 rounded-full"></span>
+            <span>Build long-term client relationships based on trust and transparency.</span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--CATALOG WITH IMAGE-->
+<section id="catalog" class="py-16">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <h2 class="text-2xl font-bold mb-10">Our Catalog</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- CARD 1 -->
+      <div class="space-y-4">
+        <div onclick="toggleCatalog('detail1')"
+             class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-lg">
+
+          <img src="img/devcard.jpg"
+               class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500 flex items-center justify-center">
+
+            <h3 class="text-white text-lg font-semibold">
+              Infrastructure Development
+            </h3>
+          </div>
+        </div>
+
+        <!-- DETAIL 1 -->
+        <div id="detail1"
+             class="hidden bg-gray-50 p-5 rounded-xl shadow text-sm text-gray-600 transition-all duration-300">
+          We handle highways, bridges, drainage systems,
+          and public facility infrastructure with modern engineering standards.
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="space-y-4">
+        <div onclick="toggleCatalog('detail2')"
+             class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-lg">
+
+          <img src="img/comercialcard.jpg"
+               class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500 flex items-center justify-center">
+
+            <h3 class="text-white text-lg font-semibold">
+              Commercial Building
+            </h3>
+          </div>
+        </div>
+
+        <!-- DETAIL 2 -->
+        <div id="detail2"
+             class="hidden bg-gray-50 p-5 rounded-xl shadow text-sm text-gray-600 transition-all duration-300">
+          Office towers, shopping centers, and mixed-use developments
+          with sustainable and efficient design.
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="space-y-4">
+        <div onclick="toggleCatalog('detail3')"
+             class="group cursor-pointer relative overflow-hidden rounded-2xl shadow-lg">
+
+          <img src="img/cardresidence.jpg"
+               class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-black/40
+                      opacity-0 group-hover:opacity-100
+                      transition duration-500 flex items-center justify-center">
+
+            <h3 class="text-white text-lg font-semibold">
+              Residential Projects
+            </h3>
+          </div>
+        </div>
+
+        <!-- DETAIL 3 -->
+        <div id="detail3"
+             class="hidden bg-gray-50 p-5 rounded-xl shadow text-sm text-gray-600 transition-all duration-300">
+          High-quality housing, apartment complexes,
+          and modern residential environments.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!--HEADQUARTER-->
 <section class="py-16 animate-[slideUp_1s_ease-out]">
   <div class="max-w-7xl mx-auto px-4">
     <h2 class="text-2xl font-bold mb-8">Our Headquarter</h2>
@@ -186,8 +345,8 @@
   </div>
 </section>
 
-<!-- ================= MESSAGE US ================= -->
-<section id="message" class="bg-white py-16 ">
+<!--MESSAGE US-->
+<section id="message" class="bg-white py-10 ">
   <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">
 
     <!-- FORM -->
